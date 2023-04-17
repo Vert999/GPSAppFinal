@@ -111,7 +111,7 @@
         android:layout_height="wrap_content"
         android:text="000 Null Lane"
         app:layout_constraintBottom_toTopOf="@+id/latlabel"
-        app:layout_constraintStart_toStartOf="@+id/labeladdress"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labeladdress" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
