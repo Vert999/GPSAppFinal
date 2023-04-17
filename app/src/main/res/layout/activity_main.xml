@@ -12,28 +12,33 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Lat:"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/slocationsupdates"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.806" />
+        app:layout_constraintVertical_bias="0.451" />
 
     <TextView
         android:id="@+id/lat_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0.00"
-        app:layout_constraintEnd_toEndOf="@+id/lon_text"
-        app:layout_constraintStart_toEndOf="@+id/latlabel"
-        app:layout_constraintTop_toTopOf="@+id/latlabel" />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/lonlabel"
+        app:layout_constraintStart_toStartOf="@+id/latlabel"
+        app:layout_constraintTop_toBottomOf="@+id/latlabel" />
 
     <TextView
         android:id="@+id/lonlabel"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
         android:text="lon:"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/latlabel"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/latlabel"
         app:layout_constraintTop_toBottomOf="@+id/latlabel" />
 
@@ -42,8 +47,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0.00"
-        app:layout_constraintStart_toEndOf="@+id/lonlabel"
-        app:layout_constraintTop_toBottomOf="@+id/latlabel" />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/slocationsupdates"
+        app:layout_constraintStart_toStartOf="@+id/lonlabel"
+        app:layout_constraintTop_toBottomOf="@+id/lonlabel"
+        app:layout_constraintVertical_bias="0.514" />
 
     <Switch
         android:id="@+id/slocationsupdates"
@@ -67,10 +75,10 @@
         android:text="GPS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <TextView
         android:id="@+id/labelgp"
@@ -91,20 +99,19 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Address:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/latlabel"
+        app:layout_constraintStart_toStartOf="@+id/latlabel"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
+        app:layout_constraintVertical_bias="0.743" />
 
     <TextView
         android:id="@+id/address_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/labeladdress"
-        app:layout_constraintEnd_toEndOf="@+id/lat_text"
-        app:layout_constraintStart_toEndOf="@+id/labeladdress"
-        app:layout_constraintTop_toTopOf="@+id/labeladdress" />
+        android:text="000 Null Lane"
+        app:layout_constraintBottom_toTopOf="@+id/latlabel"
+        app:layout_constraintStart_toStartOf="@+id/labeladdress"
+        app:layout_constraintTop_toBottomOf="@+id/labeladdress" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
