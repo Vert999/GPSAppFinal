@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/latlabel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Lat:"
+        app:layout_constraintBottom_toTopOf="@+id/slocationsupdates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <TextView
+        android:id="@+id/lat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        app:layout_constraintEnd_toEndOf="@+id/lon_text"
+        app:layout_constraintStart_toEndOf="@+id/latlabel"
+        app:layout_constraintTop_toTopOf="@+id/latlabel" />
+
+    <TextView
+        android:id="@+id/lonlabel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="lon:"
+        app:layout_constraintEnd_toEndOf="@+id/latlabel"
+        app:layout_constraintStart_toStartOf="@+id/latlabel"
+        app:layout_constraintTop_toBottomOf="@+id/latlabel" />
+
+    <TextView
+        android:id="@+id/lon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@+id/lonlabel"
+        app:layout_constraintTop_toBottomOf="@+id/latlabel" />
+
+    <Switch
+        android:id="@+id/slocationsupdates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:text="Location Updates"
+        app:layout_constraintBottom_toTopOf="@+id/sgps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.984" />
+
+    <Switch
+        android:id="@+id/sgps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="GPS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <TextView
+        android:id="@+id/labelgp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="Using GPS Sensors"
+        app:layout_constraintBottom_toBottomOf="@+id/sgps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toEndOf="@+id/sgps"
+        app:layout_constraintTop_toTopOf="@+id/sgps"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/labeladdress"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <TextView
+        android:id="@+id/address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/labeladdress"
+        app:layout_constraintEnd_toEndOf="@+id/lat_text"
+        app:layout_constraintStart_toEndOf="@+id/labeladdress"
+        app:layout_constraintTop_toTopOf="@+id/labeladdress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
